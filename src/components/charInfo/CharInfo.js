@@ -22,10 +22,14 @@ class CharInfo extends Component {
     }
 
     componentDidUpdate(prevProps){
+        // this.foo.bar = 0;
+
         if (this.props.charId !== prevProps.charId) {
             this.updateChar();
         }
     }
+
+   
 
      updateChar = () => {
         const {charId} = this.props;
@@ -39,6 +43,8 @@ class CharInfo extends Component {
             .getCharacter(charId)
             .then(this.onCharLoaded)
             .catch(this.onError);
+
+            // this.foo.bar = 0;
     }
 
     onCharLoaded = (char) => {
