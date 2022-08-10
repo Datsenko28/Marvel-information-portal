@@ -1,5 +1,5 @@
 import {useState, useEffect, useRef} from 'react';
-// import propTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 import Spinner from '../spinner/Spinner';
 import ErrorMessage from '../errorMessage/ErrorMessage';
@@ -125,7 +125,7 @@ const  CharList = (props) => {
         )
 }
 
-// CharList.propTypes = {
-//     onCharSelected: PropTypes.func.isRequired
-// }
+CharList.propTypes = {
+    onCharSelected: propTypes.func.isRequired
+}
 export default CharList;
