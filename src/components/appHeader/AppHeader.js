@@ -1,3 +1,4 @@
+// import {Link} from 'react-router';
 import './appHeader.scss';
 
 const AppHeader = () => {
@@ -18,5 +19,6 @@ const AppHeader = () => {
         </header>
     )
 }
+
 
 export default AppHeader;
