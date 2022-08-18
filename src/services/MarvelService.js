@@ -53,6 +53,7 @@ const  useMarvelService =() => {
             price: comics.prices.price ? `${comics.prices.price}$` : 'not available'
         }
     }
+    
     return{loading, error, clearError, getAllCharacters, getCharacter,getAllComics, getComics}
 }
 
